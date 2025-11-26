@@ -30,9 +30,9 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 - [Unlocking DAS Amplitude Information via Coherency Coupling](https://doi.org/10.26443/seismica.v4i1.1488) (2025) – Hudson et al. present a method using coherency to pragmatically estimate coupling of fibre to the medium. They first introduce a theoreticaljustification relating coherency to relative coupling between channels and calibrating this to obtain absolutecoupling coefficients, before evidencing the performance of the method using various examples from glaciersto downhole geothermal deployments. They apply the method to estimate earthquake magnitudes, comparingvalues to independent geophone estimates. *Tags: DAS amplitude, coupling.* **Code:** []().
 
--[Automatic Identification of High-Quality Channels in Distributed Acoustic Sensing Through Implementation of a Channel Quality Index](https://ieeexplore.ieee.org/document/11098723) (2025) - Rodriguez et al. developed a channel quality index (CQI), a machine-learning-based approach that automatically identifies high-quality DAS channels based on their ability to record earthquake signals. Trained on data from four offshore DAS experiments in the Spanish Mediterranean and Canary Islands, the model evaluates temporal, frequency, and energy-based features to assign quality scores to individual channels. *Tags: DAS amplitude, channel quality, coherency.* **Code:** [B-CSI/cqi_das](https://github.com/B-CSI/cqi_das).
+- [Automatic Identification of High-Quality Channels in Distributed Acoustic Sensing Through Implementation of a Channel Quality Index](https://ieeexplore.ieee.org/document/11098723) (2025) - Rodriguez et al. developed a channel quality index (CQI), a machine-learning-based approach that automatically identifies high-quality DAS channels based on their ability to record earthquake signals. Trained on data from four offshore DAS experiments in the Spanish Mediterranean and Canary Islands, the model evaluates temporal, frequency, and energy-based features to assign quality scores to individual channels. *Tags: DAS amplitude, channel quality, coherency.* **Code:** [B-CSI/cqi_das](https://github.com/B-CSI/cqi_das).
 
--[Denoising Offshore Distributed Acoustic Sensing Using Masked Auto-Encoders to Enhance Earthquake Detection](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024JB029728) (2025) - Shi et al. develop a self-supervised deep learning algorithm, a masked auto-encoder (MAE), to denoise DAS data for seismological purposes. The model is trained on DAS recordings of local earthquakes with randomly masked channels acquired on fiber-optic cables in the Cook Inlet offshore Alaska. To demonstrate the benefits of denoising for seismological research, they conduct the most fundamental steps to build any earthquake catalog: seismic phase picking, signal-to-noise ratio (SNR) estimation, and event association.  *Tags: DAS denoising, instrumental noise, self-supervised.* **Code:** [Denolle-Lab/Shi_etal_2023_denoiseDAS](https://github.com/Denolle-Lab/Shi_etal_2023_denoiseDAS).
+- [Denoising Offshore Distributed Acoustic Sensing Using Masked Auto-Encoders to Enhance Earthquake Detection](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2024JB029728) (2025) - Shi et al. develop a self-supervised deep learning algorithm, a masked auto-encoder (MAE), to denoise DAS data for seismological purposes. The model is trained on DAS recordings of local earthquakes with randomly masked channels acquired on fiber-optic cables in the Cook Inlet offshore Alaska. To demonstrate the benefits of denoising for seismological research, they conduct the most fundamental steps to build any earthquake catalog: seismic phase picking, signal-to-noise ratio (SNR) estimation, and event association.  *Tags: DAS denoising, instrumental noise, self-supervised.* **Code:** [Denolle-Lab/Shi_etal_2023_denoiseDAS](https://github.com/Denolle-Lab/Shi_etal_2023_denoiseDAS).
 
 - [Noise Attenuation via Guided Unsupervised Deep Learning](https://doi.org/10.1190/geo2024-0109.1) (2024) – Saad, Ravasi et al. develop a new approach to denoise DAS data that leverages an unsupervised deep learning (DL) model, eliminating the need for labeled training data. The input DAS data undergo band-pass filtering to eliminate high-frequency content. Subsequently, a continuous wavelet transform (CWT) is performed, and the finest scale is used to guide the DL model in reconstructing the DAS signal.  *Tags: DAS denoising, unsupervised learning, U-Net.* **Code:** [DeepWave-KAUST/DLDAS_Denoising-pub](https://github.com/DeepWave-KAUST/DLDAS_Denoising-pub).
 
@@ -159,7 +159,7 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 ## Related Projects
 
-- **Awesome Seismology** – See the [Awesome Seismology](https://github.com/search?q=awesome+seismology) list which covers general seismic analysis tools (many can be applied to DAS data too, especially those built on ObsPy).
+- **Awesome Geophysics** – See the [Awesome Geophysics](https://github.com/Pequenopolis/awesome-geophysics?tab=readme-ov-file) list which covers general geophysical paper, tools and datasets.
 
 - **Awesome DAS** - See the [Awesome DAS](https://github.com/DAS-RCN/awesome-das) list of DAS tools and resources.
 
@@ -169,7 +169,7 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 - **Fiber-Optic Seismic Interferometry** – Related to DAS are efforts using fiber interferometers and point sensors. Projects like Optical Seismic Arrays (using Fiber Bragg Gratings or Fabry-Pérot sensors) sometimes appear in literature. While not DAS, they share the fiber sensing concept and can be found in OSA/OFS proceedings. They hint at alternative optical seismic sensing approaches.
 
-- **Standards and Formats Initiatives** – The DAS Research Network and others are working on standardizing data formats (e.g., adapting miniSEED for DAS, or HDF5-based formats). These initiatives, while not "projects" in the sense of code, are important related efforts to follow – they will make DAS data more interoperable with other geophysical data systems (see the [DAS_metadata](https://github.com/DAS-RCN/DAS_metadata) repository in the Code section).
+- **Standards and Formats Initiatives** – The DAS Research Network and others are working on standardizing data formats (e.g., adapting miniSEED for DAS, or HDF5-based formats). See the [DAS_metadata](https://github.com/DAS-RCN/DAS_metadata) repository in the Code section.
 
 ## Contributing
 
@@ -185,7 +185,6 @@ Please ensure your pull request adheres to the following:
 - Make an individual pull request for each suggestion or category of suggestions
 - Use the format: `[Resource Name](link) - Description.` for consistency
 - Keep descriptions clear, concise (1-3 sentences), and informative (including purpose or key finding)
-- Check spelling and grammar
 - New categories or improvements to the structure are welcome if they enhance organization
 
 By contributing, you help keep this list up-to-date and useful for everyone in the DAS community. Thank you!
@@ -194,11 +193,10 @@ By contributing, you help keep this list up-to-date and useful for everyone in t
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, the contributors have waived all copyright and related or neighboring rights to this work.
-
 ---
 
 **Maintained by:** [Akmaral Amanturdieva]
+
 **Last Updated:** November 2025
 
 *Have a resource to add? Open an issue or submit a pull request!*
