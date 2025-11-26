@@ -104,25 +104,24 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 - [DASVaderDS.jl](https://github.com/marianoarnaiz/DASVaderDS.jl) – A Julia toolkit for DAS data processing, offering fast I/O, signal conditioning, and basic analysis pipelines. It can handle large DAS datasets and includes functionality for filtering, decimation, and spectral analysis.
 
-- [FiberSenseAI-DAS](https://github.com/vishnudev-p/FiberSenseAI-DAS) – A machine learning framework in Python for DAS signal analysis. Includes pre-trained models and examples for event detection, classification, and anomaly detection on fiber optic sensing data (leveraging TensorFlow/PyTorch).
+- [FiberSenseAI-DAS](https://github.com/vishnudev-p/FiberSenseAI-DAS) – A web-based anomaly detection system built with Flask that analyzes Distributed Acoustic Sensing (DAS) time-series data. It identifies "shaker" vs "noise" events using a trained KNN classifier and visualizes the anomalies with charts and downloadable reports.
 
-- [ReMi-DAS](https://github.com/Shihao-Yuan/ReMi-DAS) – An implementation of the Refraction Microtremor (ReMi) technique adapted for DAS arrays. It allows extraction of surface-wave dispersion curves from ambient DAS recordings (e.g., using fiber in urban areas) to estimate shallow shear-wave velocity profiles.
+- [ReMi-DAS](https://github.com/Shihao-Yuan/ReMi-DAS) – An implementation of the Refraction Microtremor (ReMi) technique adapted for DAS arrays. 
 
-- [pySEAFOM](https://github.com/SEAFOM-Fiber-Optic-Monitoring-Group/pySEAFOM) – A Python library from the SEAFOM (Subsea Fiber Optic Monitoring) group for simulating and analyzing DAS and DTS systems. It includes models of fiber-optic interrogator response, strain-optic coupling, and tools for processing raw backscatter data.
+- [pySEAFOM](https://github.com/SEAFOM-Fiber-Optic-Monitoring-Group/pySEAFOM) – A Python library for performance analysis and testing of Distributed Acoustic Sensing (DAS) interrogators, developed by SEAFOM's Measuring Sensor Performance group. This package provides standardized tools for testing, benchmarking, and performance evaluation of DAS systems following SEAFOM recommended procedures.
 
-- [lightguide](https://github.com/pyrocko/lightguide) (Pyrocko module) – Part of the Pyrocko seismology library, lightguide provides support for DAS data formats and simulations. It can model the propagation of seismic waves in optical fibers and perform phase demodulation, useful for converting raw DAS measurements into geophysical units.
+- [lightguide](https://github.com/pyrocko/lightguide) (Pyrocko module) – Part of the Pyrocko seismology library, lightguide provides support for DAS data formats and simulations.
 
-- [GenericCable](https://github.com/seisfwi/GenericCable) – A simulation tool that models the strain sensing response of generic fiber-optic cables. It helps in understanding how different cable deployments (straight vs. helical wrap, shallow vs. deep burial) affect DAS signal fidelity and frequency response.
-
+- [GenericCable](https://github.com/seisfwi/GenericCable) – A simulation tool that models the strain sensing response of generic fiber-optic cables. 
 
 
 ### Visualization Tools
 
-- [DAS Data Visualization](https://github.com/RachelWillis1/DAS_Data_Visualization) – A Python toolkit for interactive plotting of DAS data. Provides functions to render strain-rate time series as waterfall plots, spectrograms, and 2D colormaps (distance vs. time) with zoom and annotation features for large datasets.
+- [DAS Data Visualization](https://github.com/RachelWillis1/DAS_Data_Visualization) – A Python toolkit for plotting of DAS data. 
 
-- [DAS4Whales](https://github.com/DAS4Whales/DAS4Whales) – A specialized visualization and analysis tool for marine DAS data. It includes routines to beamform along submarine cables and spectrally enhance whale call signatures, with an interface to overlay known whale call frequencies on DAS spectrograms for easy identification.
+- [DAS4Whales](https://github.com/DAS4Whales/DAS4Whales) – A specialized visualization and analysis tool for marine DAS data. 
 
-- [Seismic-DAS Plotting Dashboard](https://github.com/Sruthisl94/Seismic-Data-Analysis-from-Distributed-Acoustic-Sensing-DAS-Data) – Example Jupyter notebooks demonstrating how to plot DAS-recorded earthquake wavefields, compare them with seismometer records, and visualize phase velocities. Useful for educational purposes and quick data exploration.
+- [Seismic-DAS Plotting Dashboard](https://github.com/Sruthisl94/Seismic-Data-Analysis-from-Distributed-Acoustic-Sensing-DAS-Data) – Analyze raw seismic DAS data from the Stanford DAS dataset to explore temporal patterns, amplitude variations, and frequency characteristics.
 
 
 ### Analysis Pipelines
@@ -131,9 +130,10 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 - [GreenlanDAS](https://github.com/Denolle-Lab/greenlanDAS) – A pipeline from Denolle Lab for analyzing glacial DAS data (as deployed in Greenland). It automates detection of icequakes, correlation of DAS strain with seismometer data, and produces summary plots of glacial seismicity over time.
 
-- [Pipeline Intrusion Detection Workflow](https://github.com/KieranFitzmaurice/pipelines) – Integrated workflow for pipeline monitoring with DAS. Starting from raw fiber data, it applies adaptive filtering, uses machine learning (random forests/CNN) to classify events (digging, vehicle crossing, manual tapping), and outputs alerts with geolocation along the pipeline.
+- [Pipeline flow characterization using distributed acoustic sensing (DAS)](https://github.com/KieranFitzmaurice/pipelines) – estimating flow velocity and speed of sound in a pipeline using DAS data via an f–k (frequency–wavenumber) Doppler method.
 
-- [Soil Salinity Active-DAS Pipeline](https://github.com/Wave-Lab-UGA/Soil-Salinity-Classification-with-Active-Distributed-Acoustic-Sensing) – A unique pipeline from UGA Wave Lab that uses active DAS measurements (sending controlled vibrations into the ground) to infer soil properties. The code handles generating sweeps, extracting wave attenuation features, and then classifying soil salinity or moisture levels using ML models.
+
+- [Soil Salinity Active-DAS Pipeline](https://github.com/Wave-Lab-UGA/Soil-Salinity-Classification-with-Active-Distributed-Acoustic-Sensing) – Data acquired from a Distributed Acoustic Sensor is used to develop a convolutional neural network for classifying soil by its salinity level. This code contains the data preparation pipeline, model training, and metric evaluation.
 
 - [Unsupervised DAS Anomaly Detection](https://github.com/ahmadtourei/das-anomaly) - An unsupervised anomaly detection in distributed acoustic sensing (DAS) datasets using an autoencoder-based deep learning algorithm.
 
@@ -142,15 +142,15 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 ## Python Libraries
 
-- [dascore](https://github.com/DASDAE/dascore) – A comprehensive Python library for DAS data, offering high-performance reading/writing of common DAS file formats (Silixa .sgy, OptaSense .opt, etc.), time/spatial resampling, filtering, and convenience functions for processing large volumes of strain data. It provides a Pandas-like interface for handling fiber-optic time series and is actively maintained by the DAS Research Coordination Network.
+- [dascore](https://github.com/DASDAE/dascore) – A comprehensive Python library for DAS data.DASCore is part of the DAS Data Analysis Ecosystem (DASDAE).
 
 - [xdas](https://github.com/xdas-dev/xdas) – An open-source framework that defines a standard data structure and API for distributed acoustic sensing data. It supports conversion between vendors' formats and includes modules for basic operations (calibration, moving average gauge length filtering, etc.). xdas facilitates easier sharing of code and data across different DAS hardware.
 
-- [DASPy](https://github.com/HMZ-03/DASPy) – A Python toolbox that includes many utility functions for DAS: signal denoising, spectral analysis, event detection, and even machine learning model wrappers. It's designed to allow seismologists to apply familiar workflows (like STA/LTA picking or spectrogram analysis) to DAS arrays.
+- [DASPy](https://github.com/HMZ-03/DASPy) – A Python toolbox that includes many utility functions for DAS. Includes classic seismic data processing techniques and specialized algorithms for DAS applications, including denoising, waveform decomposition, channel attribute analysis, and strain-velocity conversion.
 
-- [DASLab](https://github.com/yohanesnuwara/DASLab) – An educational library that provides tutorial notebooks and simple APIs for newcomers to DAS. It covers reading data, visualizing wavefields, performing cross-correlations for ambient noise, and other fundamental tasks to help users learn DAS data analysis hands-on.
+- [DASLab](https://github.com/yohanesnuwara/DASLab) – An library that provides tutorial for DAS. It covers reading data, visualizing wavefields, performing cross-correlations for ambient noise, and other fundamental tasks.
 
-- [distpy](https://github.com/Schlumberger/distpy) (Schlumberger) – A library released for distributed sensing data, which includes tools for acoustic impedance inversion on DAS VSP data, array signal processing (beamforming along a fiber), and integration with well logs. It is geared towards oil & gas applications of DAS.
+- [distpy](https://github.com/Schlumberger/distpy) – A library released for distributed sensing data, it provides massively parallel and scalable DAS interpretation using self-describing branched networks.
 
 - [pyrocko.lightguide](https://github.com/pyrocko/lightguide) – A submodule of Pyrocko (a seismology library) tailored to DAS. It can simulate the propagation of seismic waves in optical fibers (accounting for gauge length and optical propagation effects) and provide synthetic DAS data from known earthquake sources, useful for testing algorithms.
 
@@ -163,11 +163,11 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 
 - **Awesome DAS** - See the [Awesome DAS](https://github.com/DAS-RCN/awesome-das) list of DAS tools and resources.
 
-- **Distributed Fiber Sensing** – Beyond acoustic sensing, distributed fiber sensing includes Distributed Strain Sensing (DSS) and Distributed Temperature Sensing (DTS). Many DAS deployments also collect DSS/DTS. Projects like DigiFiber have compiled resources on multi-modal fiber sensing, which are useful for those interested in strain or temperature data alongside DAS.
+- **Distributed Fiber Sensing** – Beyond acoustic sensing, distributed fiber sensing includes Distributed Strain Sensing (DSS) and Distributed Temperature Sensing (DTS). Many DAS deployments also collect DSS/DTS. 
 
-- **Hydrophone & Geophone Networks** – DAS is often used in tandem with traditional sensor networks. Projects integrating DAS with seafloor hydrophone arrays (for whale monitoring) or with dense nodal seismometer arrays (for urban microzonation) provide valuable insight. For example, the Alaska Earthquake Center combined DAS with 3-component geophones in Anchorage to compare site response – those project reports can guide how to fuse DAS with other sensors.
+- **Hydrophone & Geophone Networks** – DAS is often used with traditional sensor networks. Projects integrating DAS with seafloor hydrophone arrays (for whale monitoring) or with dense nodal seismometer arrays (for urban microzonation) provide valuable insight. 
 
-- **Fiber-Optic Seismic Interferometry** – Related to DAS are efforts using fiber interferometers and point sensors. Projects like Optical Seismic Arrays (using Fiber Bragg Gratings or Fabry-Pérot sensors) sometimes appear in literature. While not DAS, they share the fiber sensing concept and can be found in OSA/OFS proceedings. They hint at alternative optical seismic sensing approaches.
+- **Fiber-Optic Seismic Interferometry** – Related to DAS are efforts using fiber interferometers and point sensors. Projects like Optical Seismic Arrays (using Fiber Bragg Gratings or Fabry-Pérot sensors) sometimes appear in literature. 
 
 - **Standards and Formats Initiatives** – The DAS Research Network and others are working on standardizing data formats (e.g., adapting miniSEED for DAS, or HDF5-based formats). See the [DAS_metadata](https://github.com/DAS-RCN/DAS_metadata) repository in the Code section.
 
