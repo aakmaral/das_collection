@@ -20,7 +20,7 @@ Distributed Acoustic Sensing (DAS) turns fiber optic cables into thousands of se
 - [Contributing](#contributing)
 - [License](#license)
 
-## Research Papers (2020 -- Present)
+## Research Papers
 
 ### Fundamentals
 
